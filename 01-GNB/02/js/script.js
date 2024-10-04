@@ -1,5 +1,6 @@
 $(function () {
     // 대상을 변수에 저장
+    const $window = $(window);
     const $header = $("header");
     const $menu = $(".gnb > li");
     const $submenu = $(".submenu");
@@ -16,5 +17,16 @@ $(function () {
         $header.removeClass("active");
         $submenu.stop().slideUp();
         $(this).removeClass("on");
+    });
+    // 마우스 휠을 조작했을떄
+    $window.on("wheel", function (e) {
+        console.log(e);
+        if (originalEvent.wheelDelta > 0) {
+            // 휠을 올렸을떄
+            $header.removeClass("hide");
+        } else {
+            // 휠을 내렸을떄
+            $header.addClass("hide");
+        }
     });
 });

@@ -20,13 +20,17 @@ $(function () {
     });
     // 마우스 휠을 조작했을떄
     $window.on("wheel", function (e) {
-        console.log(e);
-        if (originalEvent.wheelDelta > 0) {
-            // 휠을 올렸을떄
-            $header.removeClass("hide");
-        } else {
-            // 휠을 내렸을떄
-            $header.addClass("hide");
-        }
+        // console.log(e);
+        // if (originalEvent.wheelDelta > 0) {
+        //     // 휠을 올렸을떄
+        //     $header.removeClass("hide");
+        // } else {
+        //     // 휠을 내렸을떄
+        //     $header.addClass("hide");
+        // }
+
+        // 삼합조건연산자
+        // 조건 ? 참일때 동작 : 거짓일떄 동작
+        originalEvent.wheelDelta > 0 ? $header.removeClass("hide") : $header.addClass("hide");
     });
 });

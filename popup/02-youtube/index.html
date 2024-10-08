@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/script.js"></script>
+        <title>동영상 갤러리</title>
+    </head>
+    <body>
+        <!-- 팝업창 -->
+        <div class="dim"></div>
+        <video-wrap>
+            <div class="video">
+                <iframe
+                    src="https://www.youtube.com/embed/vvkWaI91mLM?si=a3HQ1g1HchuXV3sI"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <div class="caption">뮤직비디오 제목</div>
+            <button class="btn-close">닫기</button>
+        </video-wrap>
+        <div class="wrap">
+            <ul class="video-list">
+                <li data-link="https://www.youtube.com/embed/ioNng23DkIM">BLACKPINK - 'How You Like That' M/Vs</li>
+                <li data-link="https://www.youtube.com/embed/3z9sq9e5iu4">[MV] BIBI(비비) _ BINU(비누)</li>
+                <li data-link="https://www.youtube.com/embed/Y8JFxS1HlDo">IVE 아이브 'LOVE DIVE' MV</li>
+                <li data-link="https://www.youtube.com/embed/Jh4QFaPmdss">
+                    (여자)아이들((G)I-DLE) - 'TOMBOY' Official Music Video
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

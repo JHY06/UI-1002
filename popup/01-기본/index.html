@@ -30,10 +30,16 @@
                 transform: translate(-50%, -50%);
                 transition: 0.4s;
                 padding: 60px;
+                opacity: 0;
+                pointer-events: none;
+                user-select: none;
             }
             .popup.active {
                 top: 50%;
                 transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+                opacity: 1;
+                pointer-events: inherit;
+                user-select: inherit;
             }
             .dim {
                 position: fixed;
